@@ -49,7 +49,7 @@ button.addEventListener('click',()=> {
             dia.innerHTML = 'Diagnosis:';
             diaRe.innerHTML = 'Under Weight';
             eva.innerHTML = 'Evaluation';
-            evaRe.innerHTML = 'Major Health Risk';
+            evaRe.innerHTML = 'Nutritional risk';
             diaRe.style.color='red'
 
         }
@@ -69,17 +69,26 @@ button.addEventListener('click',()=> {
             dia.innerHTML = 'Diagnosis:';
             diaRe.innerHTML = 'Overweight';
             eva.innerHTML = 'Evaluation';
-            evaRe.innerHTML = 'Major Health Risk';
-            diaRe.style.color='red'
+            evaRe.innerHTML = 'At risk for obesity';
+            diaRe.style.color='#F2C010'
 
         }
-        else if (bmi > 30) {
+        else if (bmi < 40) {
             bmiText.innerHTML = 'Your BMI is: ';
             bmiRe.innerHTML = bmi;
             dia.innerHTML = 'Diagnosis:';
-            diaRe.innerHTML = 'Obesity';
+            diaRe.innerHTML = 'Obese';
             eva.innerHTML = 'Evaluation';
-            evaRe.innerHTML = 'Major Health Risk';
+            evaRe.innerHTML = 'increased Health risk';
+            diaRe.style.color='#F2C010'
+        }
+        else if (bmi >= 40) {
+            bmiText.innerHTML = 'Your BMI is: ';
+            bmiRe.innerHTML = bmi;
+            dia.innerHTML = 'Diagnosis:';
+            diaRe.innerHTML = 'Severely Obese';
+            eva.innerHTML = 'Evaluation';
+            evaRe.innerHTML = 'Major Health risk';
             diaRe.style.color='red'
         }
     }

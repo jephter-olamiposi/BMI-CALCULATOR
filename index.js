@@ -42,7 +42,7 @@ button.addEventListener('click',()=> {
     }
 
     if (height_status && weight_status) {
-        const bmi = (weight / ((height * height)/10000).toFixed(2));
+        const bmi = (weight / ((height * height)/10000)).toFixed(2);
         if (bmi < 18.6) {
             bmiText.innerHTML = 'Your BMI is: ';
             bmiRe.innerHTML = bmi;
@@ -56,16 +56,17 @@ button.addEventListener('click',()=> {
             bmiText.innerHTML = 'Your BMI is: ';
             bmiRe.innerHTML = bmi;
             dia.innerHTML = 'Diagnosis:';
-            diaRe.innerHTML = 'normal';
+            diaRe.innerHTML = 'Normal';
             eva.innerHTML = 'Evaluation';
-            evaRe = 'Healthy';
+            evaRe.innerHTML = 'Healthy'
+            diaRe.style.color='green'
 
         }
         else if (bmi >= 25.0 && bmi < 29.9) {
             bmiText.innerHTML = 'Your BMI is: ';
             bmiRe.innerHTML = bmi;
             dia.innerHTML = 'Diagnosis:';
-            diaRe.innerHTML = 'overweight';
+            diaRe.innerHTML = 'Overweight';
             eva.innerHTML = 'Evaluation';
             evaRe.innerHTML = 'Major Health Risk';
 
@@ -74,7 +75,7 @@ button.addEventListener('click',()=> {
             bmiText.innerHTML = 'Your BMI is: ';
             bmiRe.innerHTML = bmi;
             dia.innerHTML = 'Diagnosis:';
-            diaRe.innerHTML = 'obesity';
+            diaRe.innerHTML = 'Obesity';
             eva.innerHTML = 'Evaluation';
             evaRe.innerHTML = 'Major Health Risk';
         }

@@ -70,7 +70,7 @@ button.addEventListener('click',()=> {
             diaRe.innerHTML = 'Overweight';
             eva.innerHTML = 'Evaluation';
             evaRe.innerHTML = 'At risk for obesity';
-            diaRe.style.color='#F2C010'
+            diaRe.style.color='#F3C055'
 
         }
         else if (bmi < 40) {
@@ -80,7 +80,7 @@ button.addEventListener('click',()=> {
             diaRe.innerHTML = 'Obese';
             eva.innerHTML = 'Evaluation';
             evaRe.innerHTML = 'increased Health risk';
-            diaRe.style.color='#F2C010'
+            diaRe.style.color='#F3C055'
         }
         else if (bmi >= 40) {
             bmiText.innerHTML = 'Your BMI is: ';

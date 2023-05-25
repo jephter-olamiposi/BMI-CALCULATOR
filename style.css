@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #f4f4f4;
+    padding: 10px 5rem;
+
+}
+.container{
+    max-width: 100%;
+}
+.text{
+    align-items: center;
+    background-color: #E9ECEF;
+    max-width: 65rem;
+    padding: 4rem 2rem;
+    margin-bottom:2rem ;
+    border-radius: 12px;
+
+}
+.height, .weight{
+    display: flex;
+
+}
+input::placeholder{
+    font-size: 16px;
+
+}
+input{
+    padding-left: 9px; 
+    background: none ;
+    border-radius: 3px;
+    border: 1px solid #a9acaf;
+}
+input:focus {
+    outline: none;
+    box-shadow: 1px 1px 10px 1px rgb(84, 138, 255);;
+}
+#cal:focus {
+    box-shadow: 1px 1px 10px 1px rgb(84, 138, 255);;
+}
+button{
+    padding: 12px 15px;
+    background-color: #427BFF;
+    border-radius: 3px;
+    border: none;
+    font-size: 17px;
+    color: white;
+}
+button:hover{
+    background-color: #1175d9;
+}
+.no-bg{
+    background: none;
+    color: #666769;
+    border: 1px solid #a9acaf;
+    border-left: none;
+}
+.no-bg:hover{
+    background-color: #d7d7d7;
+}
+.calculator-container{
+    display: flex;
+    flex-direction:column ;
+    gap: 10px;
+}
+#bmi-re{
+    color: #427BFF;
+    font-size: 40px;
+}
+#dia-re{
+    color: red;
+    font-size: 40px;
+}
+#eva-re{
+    color: black;
+    font-size: 40px;
+}
+small {
+    color: red;
+}
+h2{
+    margin: 15px 0;
+}
+form{
+    margin-bottom: 20px;
+}

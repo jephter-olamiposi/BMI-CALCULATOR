@@ -9,12 +9,11 @@ button.addEventListener('click',()=> {
     const showError = document.querySelector('#small1')
     const showError2 = document.querySelector('#small2')
 
-    const height = parseInt(document.querySelector("#height").value);
-    const weight = parseInt(document.querySelector("#weight").value);
+    const height =document.querySelector("#height").value;
+    const weight = document.querySelector("#weight").value;
     let height_status = false,weight_status = false;
-    const empty=''
-    if (weight === empty) {
-        showError.innerHTML = 'weight Can not be blank';
+    if (weight === '') {
+        showError.innerHTML = 'Weight Cannot be blank';
     }
     else if (isNaN(weight)) {
         showError.innerHTML = 'You must enter weight in kg only';
@@ -28,10 +27,10 @@ button.addEventListener('click',()=> {
 
     }
     if (height === '') {
-        showError2.innerHTML = 'Height Can not be blank';
+        showError2.innerHTML = 'Height Cannot be blank';
     }
     else if (isNaN(height)) {
-        showError2.innerHTML = 'You must enter height in m only';
+        showError2.innerHTML = 'You must enter height in CM only';
     }
     else if (height <= 0 || (height >= 280)) {
         showError2.innerHTML = 'Your input must be greater than zero and less the 280';
@@ -43,7 +42,7 @@ button.addEventListener('click',()=> {
     }
 
     if (height_status && weight_status) {
-        const bmi = (weight / (height * height)).toFixed(2);
+        const bmi = (weight / ((height * height)/10000).toFixed(2));
         if (bmi < 18.6) {
             bmiText.innerHTML = 'Your BMI is: ';
             bmiRe.innerHTML = bmi;

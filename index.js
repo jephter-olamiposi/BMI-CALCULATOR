@@ -50,6 +50,7 @@ button.addEventListener('click',()=> {
             diaRe.innerHTML = 'Under Weight';
             eva.innerHTML = 'Evaluation';
             evaRe.innerHTML = 'Major Health Risk';
+            diaRe.style.color='red'
 
         }
         else if (bmi >= 18.5 && bmi < 24.9) {
@@ -69,6 +70,7 @@ button.addEventListener('click',()=> {
             diaRe.innerHTML = 'Overweight';
             eva.innerHTML = 'Evaluation';
             evaRe.innerHTML = 'Major Health Risk';
+            diaRe.style.color='red'
 
         }
         else if (bmi > 30) {
@@ -78,6 +80,7 @@ button.addEventListener('click',()=> {
             diaRe.innerHTML = 'Obesity';
             eva.innerHTML = 'Evaluation';
             evaRe.innerHTML = 'Major Health Risk';
+            diaRe.style.color='red'
         }
     }
     else{
